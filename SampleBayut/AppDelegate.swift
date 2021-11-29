@@ -10,7 +10,12 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    private(set) lazy var sceneFactory: SceneFactoryProtocol = {
+        let factory = SceneFactory(productAPIService: productService)
+        return factory
+    }()
+    
+    private lazy var productService: FetchProductListProtocol = ProductAPIService.shared
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

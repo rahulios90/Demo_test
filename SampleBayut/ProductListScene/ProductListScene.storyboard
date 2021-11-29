@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VGa-4p-b2A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product List View Controller-->
+        <scene sceneID="tSE-it-8h9">
+            <objects>
+                <viewController id="VGa-4p-b2A" customClass="ProductListViewController" customModule="SampleBayut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5oT-Yn-r82">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Products..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cQ-HE-0qE">
+                                <rect key="frame" x="133.5" y="442.5" width="147.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vAp-ez-RMa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VGa-4p-b2A" id="ZXH-dg-hP3"/>
+                                    <outlet property="delegate" destination="VGa-4p-b2A" id="AiT-fK-fOK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pIq-4S-Bsh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6cQ-HE-0qE" firstAttribute="centerY" secondItem="pIq-4S-Bsh" secondAttribute="centerY" id="CdK-HQ-UA9"/>
+                            <constraint firstItem="pIq-4S-Bsh" firstAttribute="bottom" secondItem="vAp-ez-RMa" secondAttribute="bottom" id="HZp-br-doT"/>
+                            <constraint firstItem="vAp-ez-RMa" firstAttribute="leading" secondItem="pIq-4S-Bsh" secondAttribute="leading" id="dNs-Q8-2Ft"/>
+                            <constraint firstItem="vAp-ez-RMa" firstAttribute="top" secondItem="pIq-4S-Bsh" secondAttribute="top" id="psD-dB-Wa1"/>
+                            <constraint firstItem="pIq-4S-Bsh" firstAttribute="trailing" secondItem="vAp-ez-RMa" secondAttribute="trailing" id="sfh-S5-j0w"/>
+                            <constraint firstItem="6cQ-HE-0qE" firstAttribute="centerX" secondItem="pIq-4S-Bsh" secondAttribute="centerX" id="yst-VN-pl1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="vAp-ez-RMa" id="rjT-Lb-7MX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hed-YT-Oks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

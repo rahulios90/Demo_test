@@ -13,14 +13,15 @@ protocol SceneFactoryProtocol {
 }
 
 struct SceneFactoryContext {
+    let productAPIService: FetchProductListProtocol
 }
 
 final class SceneFactory: SceneFactoryProtocol {
 
     private let context: SceneFactoryContext
 
-    init() {
-        self.context = SceneFactoryContext()
+    init(productAPIService: FetchProductListProtocol) {
+        self.context = SceneFactoryContext(productAPIService: productAPIService)
     }
 
     /// Takes a Scene instance, creates it's view controller and then calls configure with the model objects (in the Context).
