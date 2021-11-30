@@ -18,7 +18,7 @@ struct SceneFactoryContext {
 
 final class SceneFactory: SceneFactoryProtocol {
 
-    private let context: SceneFactoryContext
+    let context: SceneFactoryContext
 
     init(productAPIService: FetchProductListProtocol) {
         self.context = SceneFactoryContext(productAPIService: productAPIService)

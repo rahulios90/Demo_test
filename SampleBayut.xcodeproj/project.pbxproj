@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2515E77B27560DD8008B14AC /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515E77A27560DD8008B14AC /* ProductDetailViewModel.swift */; };
+		2515E77D27560DF3008B14AC /* ProductDetailScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2515E77C27560DF3008B14AC /* ProductDetailScene.storyboard */; };
+		2515E77F27560E10008B14AC /* ProductDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515E77E27560E10008B14AC /* ProductDetailScene.swift */; };
+		2515E78127560E1C008B14AC /* ProductDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515E78027560E1C008B14AC /* ProductDetailRouter.swift */; };
+		2515E78527560E4A008B14AC /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2515E78427560E4A008B14AC /* ProductDetailViewController.m */; };
+		2515E788275611B5008B14AC /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515E787275611B5008B14AC /* UIFont+Extension.swift */; };
+		2515E78A27564999008B14AC /* ProductListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515E78927564999008B14AC /* ProductListUITests.swift */; };
+		2515E78D275649DC008B14AC /* ProductList.json in Resources */ = {isa = PBXBuildFile; fileRef = 2515E78C275649DC008B14AC /* ProductList.json */; };
 		257ED1E62753CB8F0064EB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257ED1E52753CB8F0064EB99 /* AppDelegate.swift */; };
 		257ED1E82753CB8F0064EB99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257ED1E72753CB8F0064EB99 /* SceneDelegate.swift */; };
 		257ED1EA2753CB8F0064EB99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257ED1E92753CB8F0064EB99 /* ViewController.swift */; };
@@ -72,6 +80,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2515E77A27560DD8008B14AC /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		2515E77C27560DF3008B14AC /* ProductDetailScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetailScene.storyboard; sourceTree = "<group>"; };
+		2515E77E27560E10008B14AC /* ProductDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailScene.swift; sourceTree = "<group>"; };
+		2515E78027560E1C008B14AC /* ProductDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailRouter.swift; sourceTree = "<group>"; };
+		2515E78227560E4A008B14AC /* SampleBayut-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleBayut-Bridging-Header.h"; sourceTree = "<group>"; };
+		2515E78327560E4A008B14AC /* ProductDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		2515E78427560E4A008B14AC /* ProductDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		2515E787275611B5008B14AC /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		2515E78927564999008B14AC /* ProductListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListUITests.swift; sourceTree = "<group>"; };
+		2515E78C275649DC008B14AC /* ProductList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductList.json; sourceTree = "<group>"; };
 		257ED1E22753CB8F0064EB99 /* SampleBayut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBayut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257ED1E52753CB8F0064EB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		257ED1E72753CB8F0064EB99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +168,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2515E77927560DA5008B14AC /* ProductDetailScene */ = {
+			isa = PBXGroup;
+			children = (
+				2515E77A27560DD8008B14AC /* ProductDetailViewModel.swift */,
+				2515E77C27560DF3008B14AC /* ProductDetailScene.storyboard */,
+				2515E77E27560E10008B14AC /* ProductDetailScene.swift */,
+				2515E78027560E1C008B14AC /* ProductDetailRouter.swift */,
+				2515E78327560E4A008B14AC /* ProductDetailViewController.h */,
+				2515E78427560E4A008B14AC /* ProductDetailViewController.m */,
+			);
+			path = ProductDetailScene;
+			sourceTree = "<group>";
+		};
+		2515E786275610FD008B14AC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2515E787275611B5008B14AC /* UIFont+Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2515E78B275649DC008B14AC /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				2515E78C275649DC008B14AC /* ProductList.json */,
+			);
+			name = Stub;
+			path = SampleBayutTests/Stub;
+			sourceTree = SOURCE_ROOT;
+		};
 		257ED1D92753CB8F0064EB99 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +221,8 @@
 		257ED1E42753CB8F0064EB99 /* SampleBayut */ = {
 			isa = PBXGroup;
 			children = (
+				2515E786275610FD008B14AC /* Utility */,
+				2515E77927560DA5008B14AC /* ProductDetailScene */,
 				257ED23F2753F0280064EB99 /* Common */,
 				257ED22F2753E4410064EB99 /* ProductListScene */,
 				257ED22C2753D9BB0064EB99 /* APIService */,
@@ -182,6 +232,7 @@
 				257ED1E52753CB8F0064EB99 /* AppDelegate.swift */,
 				257ED1E72753CB8F0064EB99 /* SceneDelegate.swift */,
 				257ED1E92753CB8F0064EB99 /* ViewController.swift */,
+				2515E78227560E4A008B14AC /* SampleBayut-Bridging-Header.h */,
 				257ED1EB2753CB8F0064EB99 /* Main.storyboard */,
 				257ED1EE2753CB900064EB99 /* Assets.xcassets */,
 				257ED1F02753CB900064EB99 /* LaunchScreen.storyboard */,
@@ -205,8 +256,10 @@
 		257ED2062753CB900064EB99 /* SampleBayutUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2515E78B275649DC008B14AC /* Stub */,
 				257ED2072753CB900064EB99 /* SampleBayutUITests.swift */,
 				257ED2092753CB900064EB99 /* Info.plist */,
+				2515E78927564999008B14AC /* ProductListUITests.swift */,
 			);
 			path = SampleBayutUITests;
 			sourceTree = "<group>";
@@ -256,8 +309,8 @@
 				257ED23A2753E4E80064EB99 /* TableViewCell */,
 				257ED2302753E48C0064EB99 /* ProductListScene.swift */,
 				257ED2322753E4990064EB99 /* ProductListRouter.swift */,
-				257ED2342753E4A80064EB99 /* ProductListViewModel.swift */,
 				257ED2362753E4B90064EB99 /* ProductListViewController.swift */,
+				257ED2342753E4A80064EB99 /* ProductListViewModel.swift */,
 				257ED2382753E4E10064EB99 /* ProductListScene.storyboard */,
 			);
 			path = ProductListScene;
@@ -386,6 +439,7 @@
 				TargetAttributes = {
 					257ED1E12753CB8F0064EB99 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					257ED1F72753CB900064EB99 = {
 						CreatedOnToolsVersion = 12.5;
@@ -426,6 +480,7 @@
 				257ED1F22753CB900064EB99 /* LaunchScreen.storyboard in Resources */,
 				257ED2392753E4E10064EB99 /* ProductListScene.storyboard in Resources */,
 				257ED1EF2753CB900064EB99 /* Assets.xcassets in Resources */,
+				2515E77D27560DF3008B14AC /* ProductDetailScene.storyboard in Resources */,
 				257ED1ED2753CB8F0064EB99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2515E78D275649DC008B14AC /* ProductList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,18 +520,23 @@
 				257ED2242753D5DB0064EB99 /* APIClient.swift in Sources */,
 				257ED2262753D5DB0064EB99 /* URLBuilder.swift in Sources */,
 				257ED24A2753F0280064EB99 /* UITableViewCell+NibInstantiable.swift in Sources */,
+				2515E78527560E4A008B14AC /* ProductDetailViewController.m in Sources */,
+				2515E78127560E1C008B14AC /* ProductDetailRouter.swift in Sources */,
 				257ED2282753D5DB0064EB99 /* HTTPStatusCode.swift in Sources */,
 				257ED2462753F0280064EB99 /* UIImageView+Cache.swift in Sources */,
+				2515E77F27560E10008B14AC /* ProductDetailScene.swift in Sources */,
 				257ED24B2753F0280064EB99 /* ReuseIdentifying.swift in Sources */,
 				257ED1E62753CB8F0064EB99 /* AppDelegate.swift in Sources */,
 				257ED22E2753D9EB0064EB99 /* ProductAPIService.swift in Sources */,
 				257ED2372753E4B90064EB99 /* ProductListViewController.swift in Sources */,
 				257ED21B2753D57C0064EB99 /* UIViewController+Storyboard.swift in Sources */,
+				2515E788275611B5008B14AC /* UIFont+Extension.swift in Sources */,
 				257ED21C2753D57C0064EB99 /* Router.swift in Sources */,
 				257ED1E82753CB8F0064EB99 /* SceneDelegate.swift in Sources */,
 				257ED2272753D5DB0064EB99 /* HTTPURLResponse+Extensions.swift in Sources */,
 				257ED22B2753D93A0064EB99 /* Product.swift in Sources */,
 				257ED2352753E4A80064EB99 /* ProductListViewModel.swift in Sources */,
+				2515E77B27560DD8008B14AC /* ProductDetailViewModel.swift in Sources */,
 				257ED2312753E48C0064EB99 /* ProductListScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				257ED2082753CB900064EB99 /* SampleBayutUITests.swift in Sources */,
+				2515E78A27564999008B14AC /* ProductListUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +726,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SampleBayut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -672,6 +735,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.SampleBayut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleBayut/SampleBayut-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -682,6 +747,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SampleBayut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -690,6 +756,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.SampleBayut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleBayut/SampleBayut-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

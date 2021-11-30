@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIImageView {
+@objc extension UIImageView {
     // way to hack stored property in extension, we using static hence needed dictionary to store based on address
     private static var urlStore = [String:String]()
 

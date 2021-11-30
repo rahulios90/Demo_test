@@ -6,8 +6,8 @@
 //
 
 import Foundation
-
-struct Product: Codable {
+/// Product is class instead of struct only because it is being used by Objective C class 
+@objcMembers class Product: NSObject, Codable {
     var createdDate: String
     var price: String
     var name: String
@@ -22,8 +22,12 @@ struct Product: Codable {
     }
 }
 
-struct ProductResult: Codable {
+class ProductResult: Codable {
     var data: [Product]
+    
+    init(data: [Product]) {
+        self.data = data
+    }
     
     enum CodingKeys: String, CodingKey {
         case data = "results"

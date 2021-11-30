@@ -11,9 +11,14 @@ final class ProductListViewController: UIViewController {
     
     private enum UIConstants {
         static let estimatedRowHeight = CGFloat(80)
+        static let tableViewUIIdentifier = "productList"
     }
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.accessibilityIdentifier = UIConstants.tableViewUIIdentifier
+        }
+    }
 
     var viewModel: ProductListViewModelProtocol!
    
